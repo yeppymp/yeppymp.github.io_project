@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <vue-progress-bar></vue-progress-bar>
 
     <header class="header navbar-fixed-top" v-show="experiences()">
@@ -28,6 +28,9 @@
                             <li class="js_nav-item nav-item">
                               <a href="https://yeppymp.github.io/portfolio" class="nav-item-child nav-item-hover" target="_blank">Portfolio</a>
                             </li>
+                            <li class="js_nav-item nav-item">
+                              <a href="https://medium.com/@yeppymp" class="nav-item-child nav-item-hover" target="_blank">Blog</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -52,7 +55,6 @@ export default {
         { path: '/experiences', text: 'Experiences' },
         { path: '/services', text: 'Services' },
         { path: '/skills', text: 'Skills' },
-        // { path: '/blog', text: 'Blog' },
       ],
     };
   },

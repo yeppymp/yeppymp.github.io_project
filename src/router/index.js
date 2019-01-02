@@ -32,10 +32,5 @@ export default new Router({
       name: 'Skills',
       component: () => import('@/components/Skills'),
     },
-    // {
-    //   path: '/blog',
-    //   name: 'Blog',
-    //   component: () => import('@/components/Blog'),
-    // },
   ],
 });
