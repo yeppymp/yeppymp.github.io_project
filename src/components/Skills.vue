@@ -13,35 +13,14 @@
             <p>{{ desc }}</p>
           </div>
 
-          <h3 class="sub-skills">Frontend</h3>
-          <div class="progress-box" v-for="s in skills.frontend" :key="s">
-            <h5>{{ s.name }} <span class="color-heading pull-right">{{ s.percentage }}</span></h5>
-            <div class="progress">
-              <div class="progress-bar bg-color-base" :style="{ width: s.percentage }"></div>
-            </div>
-          </div>
-
-          <h3 class="sub-skills">Backend</h3>
-          <div class="progress-box" v-for="s in skills.backend" :key="s">
-            <h5>{{ s.name }} <span class="color-heading pull-right">{{ s.percentage }}</span></h5>
-            <div class="progress">
-              <div class="progress-bar bg-color-base" :style="{ width: s.percentage }"></div>
-            </div>
-          </div>
-
-          <h3 class="sub-skills">Android</h3>
-          <div class="progress-box" v-for="s in skills.android" :key="s">
-            <h5>{{ s.name }} <span class="color-heading pull-right">{{ s.percentage }}</span></h5>
-            <div class="progress">
-              <div class="progress-bar bg-color-base" :style="{ width: s.percentage }"></div>
-            </div>
-          </div>
-
-          <h3 class="sub-skills">Design</h3>
-          <div class="progress-box" v-for="s in skills.design" :key="s">
-            <h5>{{ s.name }} <span class="color-heading pull-right">{{ s.percentage }}</span></h5>
-            <div class="progress">
-              <div class="progress-bar bg-color-base" :style="{ width: s.percentage }"></div>
+          <div v-for="(s, i) in skills" :key="i">
+            <br v-if="i > 0">
+            <h2 class="sub-skills">{{ s.title }}</h2>
+            <div class="progress-box" v-for="(d, id) in s.data" :key="id">
+              <h5>{{ d.name }} <span class="color-heading pull-right">{{ d.percentage }}</span></h5>
+              <div class="progress">
+                <div class="progress-bar bg-color-base" :style="{ width: d.percentage }"></div>
+              </div>
             </div>
           </div>
 

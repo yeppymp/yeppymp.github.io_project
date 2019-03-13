@@ -5,39 +5,61 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    skills: {
-      frontend: [
-        { name: 'HTML', percentage: '100%' },
-        { name: 'CSS', percentage: '90%' },
-        { name: 'Javascript', percentage: '90%' },
-        { name: 'VueJS', percentage: '85%' },
-        { name: 'AngularJS', percentage: '40%' },
-      ],
-      backend: [
-        { name: 'NodeJS', percentage: '80%' },
-        { name: 'PHP', percentage: '70%' },
-        { name: 'Laravel', percentage: '80%' },
-      ],
-      android: [
-        { name: 'Ionic', percentage: '75%' },
-        { name: 'Java', percentage: '15%' },
-        { name: 'Kotlin', percentage: '60%' },
-      ],
-      design: [
-        { name: 'User Interface', percentage: '90%' },
-        { name: 'User Experience', percentage: '50%' },
-        { name: 'Graphic Design', percentage: '70%' },
-        { name: 'Adobe Photoshop', percentage: '90%' },
-        { name: 'Adobe XD (Experience Design)', percentage: '90%' },
-        { name: 'Adobe Illustator', percentage: '75%' },
-        { name: 'Corel Draw', percentage: '70%' },
-        { name: 'Gravit Designer', percentage: '90%' },
-      ],
-    },
+    skills: [
+      {
+        title: 'Front-end Web Development',
+        data: [
+          { name: 'HTML', percentage: '100%' },
+          { name: 'CSS', percentage: '97%' },
+          { name: 'Boostrap', percentage: '95%' },
+          { name: 'Bulma', percentage: '95%' },
+          { name: 'Javascript', percentage: '90%' },
+          { name: 'VueJS', percentage: '90%' },
+          { name: 'AngularJS', percentage: '40%' },
+        ],
+      },
+      {
+        title: 'Back-end Web Development',
+        data: [
+          { name: 'NodeJS', percentage: '80%' },
+          { name: 'PHP', percentage: '95%' },
+          { name: 'Laravel', percentage: '90%' },
+        ],
+      },
+      {
+        title: 'Android Development',
+        data: [
+          { name: 'Ionic', percentage: '75%' },
+          { name: 'Java', percentage: '25%' },
+          { name: 'Kotlin', percentage: '75%' },
+        ],
+      },
+      {
+        title: 'Design & Tools',
+        data: [
+          { name: 'User Interface', percentage: '90%' },
+          { name: 'User Experience', percentage: '50%' },
+          { name: 'Graphic Design', percentage: '80%' },
+          { name: 'Adobe Photoshop', percentage: '95%' },
+          { name: 'Adobe XD (Experience Design)', percentage: '95%' },
+          { name: 'Adobe Illustator', percentage: '80%' },
+          { name: 'Corel Draw', percentage: '70%' },
+          { name: 'Gravit Designer', percentage: '85%' },
+        ],
+      },
+      {
+        title: 'Operating Systems',
+        data: [
+          { name: 'Windows', percentage: '90%' },
+          { name: 'Linux', percentage: '85%' },
+          { name: 'Linux Ubuntu', percentage: '98%' },
+        ],
+      },
+    ],
     abouts: {
       greeting: 'Hi, i’m Yeppy, Software Developer from Tangerang, Indonesia.',
       desc: [
-        'Currently I am a colleger majoring in Technical Information at Mercubuana Unversity, I also work as a freelancer Web Developer, Mobile Developer, and UI Designer',
+        'Currently I am a colleger majoring in Computer Science at Mercubuana Unversity, I also work as a freelancer Web Developer, Mobile Developer, and UI Designer',
         'I really like programming, because it requires me to focus, discipline, team work, and many other positive things from the programming that I get.',
       ],
     },
@@ -65,7 +87,7 @@ export default new Vuex.Store({
           name: 'Bachelor Degree',
           title: 'Mercubuana University',
           years: '2018 - Now',
-          desc: 'In this uniersity I majored in Technical Information continued from senior highschool',
+          desc: 'In this uniersity I majoring Computer Science continued from senior highschool',
         },
       ],
       archievements: [
@@ -89,13 +111,18 @@ export default new Vuex.Store({
           years: '2018, 5th',
           desc: 'My role as Frontend Developer, I followed this competition to evaluate how far I am as a frontend developer',
         },
+        {
+          title: 'Dicoding Challenge - Telkom Travel Apps',
+          years: '2018, Winner',
+          desc: 'My role as UI/UX Designer, I followed this with my classmate Riksa to create Ngetrip Mobile Application',
+        },
       ],
     },
     services: [
       { icon: 'icon-screen-smartphone', color: '#f306a0', title: 'Android Development' },
       { icon: 'fa fa-code', color: '#d8be10', title: 'Web Development' },
       { icon: 'fa fa-code', color: '#d8be10', title: 'Clean Code' },
-      { icon: 'icon-support', color: '#0fd28a', title: 'UI Designer' },
+      { icon: 'icon-support', color: '#0fd28a', title: 'UI Design' },
       { icon: 'fa fa-html5', color: '#f97400', title: 'HTML5 Design' },
       { icon: 'icon-bulb', color: '#08a6f3', title: 'CSS3 Design' },
     ],

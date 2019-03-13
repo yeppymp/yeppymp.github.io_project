@@ -7,7 +7,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="section-title text-center">
-              <h2>My Experience.</h2>
+              <h2>My Experiences.</h2>
               <div class="divider dark">
                 <i class="icon-graduation"></i>
               </div>

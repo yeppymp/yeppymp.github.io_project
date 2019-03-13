@@ -15,7 +15,7 @@
                 <div class="about-content">
                   <h4>{{ greeting }}</h4>
                   <p class="text-justify" v-for="d in desc" :key="d"> {{ d }}</p>
-                  <a href="" class="btn btn-default">Hire Me !</a>
+                  <!-- <a href="" class="btn btn-default">Hire Me !</a> -->
                 </div>
               </div>
 
